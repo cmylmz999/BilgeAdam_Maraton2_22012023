@@ -1,0 +1,48 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+             version="2.1">
+
+    <persistence-unit name="CRM">
+        <description>
+            Persistence unit for Hibernate User Guide
+        </description>
+
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <class>com.cem.entity.Kazananlar</class>
+        <class>com.cem.entity.Puan</class>
+        <class>com.cem.entity.Soru</class>
+        <class>com.cem.entity.Unlu</class>
+        <class>com.cem.entity.Yarisma</class>
+        <class>com.cem.entity.Yarismaci</class>
+
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver"
+                      value="org.postgresql.Driver" />
+
+            <property name="jakarta.persistence.jdbc.url"
+                      value="jdbc:postgresql://localhost:5432/MaratonDB" />
+
+            <property name="jakarta.persistence.jdbc.user"
+                      value="postgres" />
+
+            <property name="jakarta.persistence.jdbc.password"
+                      value="root" />
+
+            <property name="hibernate.show_sql"
+                      value="true" />
+
+            <property name="hibernate.hbm2ddl.auto"
+                      value="create-drop" />
+            <!--
+            sdasdasd
+            fasda
+            asdasd
+            -->
+        </properties>
+
+    </persistence-unit>
+
+</persistence>
